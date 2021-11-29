@@ -1,9 +1,6 @@
-const initialState = 0;
+import { Action } from '../actions/index'
 
-type Action = {
-    type: string,
-    payload?: number
-}
+const initialState = 0;
 
 const reducer = (state: number = initialState, action: Action) => {
     switch (action.type) {
